@@ -1,0 +1,89 @@
+Installing Java-
+
+c-sudo apt update
+c-wget copy the link for java(package)
+c-tar -xvf ----------
+c-mv java..... /opt/
+
+and we setting for the environment variables
+c-vi ./.profile
+
+JAVA_HOME='/opt/jdk-......'
+PATH="$JAVA_HOME/bin:$PATH"
+export PATH
+
+Then u save it
+
+c-source .profile (you can relaunch the terminal or execute)
+
+Then u check the java version
+
+c-java -version
+
+----------------------------------------------------------------------------
+
+Installing Maven 
+
+c-wget copy the link for maven site(package)
+
+c-tar xvf apache.maven......
+
+c-mv apache.maven........
+
+
+and we setting for the environment variables
+c-vi ./.profile
+
+M2_HOME='/opt/apache-maven-....'
+PATH="$M2_HOME/bin:$PATH"
+export PATH
+
+c-source .profile (you can relaunch the terminal or execute)
+
+c-mvn -version
+
+----------------------------------------------------------------------------------------
+
+
+Installing jenkins
+
+c-sudo apt update
+
+Before jenkins install u check jdk install or not
+
+c-wget copy the for jenkins site (package)
+
+
+c-sudo apt-key add jenkins.io.key
+
+then u get ok the command was successful.
+
+c-deb copy the for jenkins site (package) --add for the jenkins repository
+
+c-sudo apt update
+c-sudo apt install jenkins
+ 
+Then jenkins installing was successfull
+
+c-sudo systemctl status jenkins
+ 
+Then u get the activate msg ,now its ok
+
+c-sudo ufw allow 8080
+ 
+8080 its port,and ufw its firewall access to this port
+
+c-sudo ufw status
+
+u just type the localhost:8080 (its default) ip address
+
+and u get the password box
+
+then u go to terminal
+c-sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+then u got the password,now than its copy and past for the password box(jenkins site)
+
+Now its open then u create the jenkins account and go for it ....
+
+-------------------------------------------------------------------------------------------------------
