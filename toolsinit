@@ -1,7 +1,7 @@
 Installing Java-
 
 c-sudo apt update
-c-wget copy the link for java(package)
+c-wget https://download.java.net/java/GA/jdk13.0.1/cec27d702aa74d5a8630c65ae61e4305/9/GPL/openjdk-13.0.1_linux-x64_bin.tar.gz
 c-tar -xvf ----------
 c-mv java..... /opt/
 
@@ -24,7 +24,8 @@ c-java -version
 
 Installing Maven 
 
-c-wget copy the link for maven site(package)
+c-wget https://mirrors.estointernet.in/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+
 
 c-tar xvf apache.maven......
 
